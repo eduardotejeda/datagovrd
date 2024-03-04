@@ -29,3 +29,10 @@ def get_budget_info():
         "title": BudgetService.get_title(),
         "available_budgets": BudgetService.get_available_budgets()
     }
+#Comenzando a puyar
+@router.get("/estadisticas/info")
+def get_estad_info():
+    return {
+        "title": "Estadisticas disponibles",
+        "available_budgets": "2023"
+    }
